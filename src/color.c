@@ -26,7 +26,9 @@ int printtable(void)
   return 0;
 }
 
-int getcolor()
+int getcolor(const char *arg)
 {
+  printf("\033[%sm%s\033[0m\n", arg, arg);
+
   return 0;
 }
